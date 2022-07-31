@@ -15,8 +15,7 @@
 
 /* Style the body */
 body {
-  font-family: Majesti Banner 
-  ;
+  font-family: Majesti Banner Book;
   margin: 0;
 }
 
@@ -31,6 +30,47 @@ body {
 
 /* Page Content */
 .content {padding: 20px;}
+
+  .dropbtn {
+  background-color: #41393d;
+  color: white;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ef4e22;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #41393d;
+}
 
 body  {
       background-image: url("image/background.png");
@@ -53,16 +93,23 @@ body  {
   background-color: #be1e2d;
   color: #ffffff;   
   
-     
+
 </style>
 </head>
-<body>
- 
 
 
 <div class="header">
+  
   <h1><image src="../townchinesefood/image/TOWN_logo.png" width="130"> </image>
- 
+    <div class="dropdown" style="float:right;">
+  <button class="dropbtn">
+  <img src="../townchinesefood/image/Menu Dropdown.png" height="16"></image></button>
+  <div class="dropdown-content">
+  <i>
+  <a href="#">Menu</a>
+  <a href="#">Mission</a>
+  <a href="#">About Us</a></i>
+  </div>
 </div>
   
 <center>
@@ -99,12 +146,13 @@ body  {
     Our audience is a high-end clientele who
     values a dining experience. The age range
     of our customers are from early 30s-60s.
-    We would like them to come back for both </div>p><!-- This is second part of 'Vision' body which explains targeted client characteristics who seek out our services-->
+    We would like them to come back for both </div><!-- This is second part of 'Vision' body which explains targeted client characteristics who seek out our services-->
 
 </div>
 <center><<img src="image/circle_instagram.png" width="50"> <img src="image/circle_tiktok.png" width="50"><img src="image/circle_facebook.png" width="50"> <!-- This will later be hyperlinks to social media-->
 <br>
 <b><p style="color:#d7e4c2;">123 Tasty DR, San Antonio TX 78254<br> (210) 123-4567</p></b> <!-- This is the address and number-->
+                            
 /center>
 </style>
 </body>
