@@ -15,8 +15,8 @@
 /* Font */
 @font-face {
     font-family: 'majesti_bannermedium';
-    src: url('../townchinesefood/image/majesti-banner-medium-webfont.woff2') format('woff2'),
-         url('../townchinesefood/image/majesti-banner-medium-webfont.woff') format('woff');
+    src: url('../townchinesefood/css/majesti-banner-medium-webfont.woff2') format('woff2'),
+         url('../townchinesefood/css/majesti-banner-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -53,11 +53,31 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  
   width: 50%;
   
 }
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
+div.gallery img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 /* Drop down Box */
 
 .content {padding: 20px;}
@@ -158,8 +178,16 @@ body  {
   transform: translate(-50%, -50%);
 }
 
+.main {
+  
+  text-align: center;
+  width: 100%;
+  
+
+
+}
 .follow {
-  padding: 20px 0;
+  
   text-align: center;
   width: 100%;
   
@@ -187,7 +215,6 @@ body  {
 }
 
 .location {
-  font-family: majesti_bannermedium;
   padding: 20px 0;
   text-align: center;
   width: 100%;
@@ -203,11 +230,11 @@ color: #d7e4c2;
 }
 </style>
 
-
+ <img src="../townchinesefood/image/TOWN_logo.png" alt="town logo"> 
 <div class="header">
   
 
-  <img src="../townchinesefood/image/TOWN_logo.png" alt="town logo" width="130"> 
+ 
     <div class="dropdown" style="float:right;">
   <button class="dropbtn">
   <img src="../townchinesefood/image/drop_logo.png" alt="dropdown menu button" height="16px"></button>
@@ -222,30 +249,31 @@ color: #d7e4c2;
 </div>
 
 
-<center><img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image" width="700" >
-</center><!-- This is main image-->
+<div class="follow">
+  <img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image">
+</div><!-- This is main image-->
 
 
  <div class="image-link">
-  <a href="#"><img style="float:left;" src="../townchinesefood/image/menu button.png" alt="menu button" width="75"></a>
-  <a href="#"><img src="../townchinesefood/image/bar_button.png" alt="bar button" width="75"></a>
-  <a href="#"><img style="float:right;" src="../townchinesefood/image/order_button.png" alt="order button" width="75"></a>
+  <a href="#"><img style="float:left;" src="../townchinesefood/image/menu button.png" alt="menu button" ></a>
+  <a href="#"><img src="../townchinesefood/image/bar_button.png" alt="bar_button"></a>
+  <a href="#"><img style="float:right;" src="../townchinesefood/image/order_button.png" alt="order button"></a>
 
 </div> <!-- This is link images-->
 
 
  <div class="follow">
   <br> <h2> Follow Us </h2>
-   <img src="../townchinesefood/image/circle_facebook.png" alt="facebook" width="50"/>
-     <img src="../townchinesefood/image/circle_instagram.png" alt="instagram" width="50"/>
-     <img src="../townchinesefood/image/circle_tiktok.png" alt="tiktok" width="50"/> 
+   <img src="../townchinesefood/image/circle_facebook.png" alt="facebook">
+     <img src="../townchinesefood/image/circle_instagram.png" alt="instagram">
+     <img src="../townchinesefood/image/circle_tiktok.png" alt="tiktok"> 
  
      <br>
- 
-     <a href="#"><img src="image/noodles_fresh_chopsticks_instagram.jpg" alt="instagram chopsticks" width="150px"></a>
-     <a href="#"><img src="image/Sanzhi XinZhuangLi_beach_instagram.jpg" alt="instagram beach china" height="225px"> </a>
-     <br> <a href="#"><img src="image/beef_large_kitchen.jpg" alt="instagram beef kitchen" width="320px"> </a>
-     <a href="#"><img src="image/interior_asian_instagram.jpg" alt="instagram interior resturant" height="225px"> </a>
+     <div class="gallery">
+     <a href="#"><img src="image/noodles_fresh_chopsticks_instagram.jpg" alt="instagram chopsticks" ></a>
+     <a href="#"><img src="image/Sanzhi XinZhuangLi_beach_instagram.jpg" alt="instagram beach china"> </a>
+     <a href="#"><img src="image/beef_large_kitchen.jpg" alt="instagram beef kitchen"> </a>
+     <a href="#"><img src="image/interior_asian_instagram.jpg" alt="instagram interior resturant"> </a>
  </div><!--This is instagram posts-->
  
  <div class="mission">
@@ -266,7 +294,7 @@ color: #d7e4c2;
     Our vision for the future is to create
     experiential dining that is more than just
     a night out. We aim to bring quality and
-    luxury across all aspects of our brand. </blockquote></p><!-- This is the body describing organization's vision including quality goals-->
+    luxury across all aspects of our brand. <!-- This is the body describing organization's vision including quality goals-->
     
     The approach of TOWN is to develop our brand with the understanding of both our
     culture and consumer insights. Within our
