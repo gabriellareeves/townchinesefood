@@ -21,6 +21,8 @@
     font-style: normal;
 
 }
+
+
 body {
   font-family: majesti_bannermedium;
   margin: 0;
@@ -28,7 +30,53 @@ body {
   color: white;
   ;
 }
+.main-design {
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
 
+.very-specific-design {
+  width: 600px;
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+  
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+.scaleable-wrapper-main {
+  padding: 50px;
+  resize: both;
+  position: relative;
+  background: ;
+  height: 400px;
+}
+.scaleable-wrapper {
+  padding: 10px;
+  resize: both;
+  position: relative;
+  background:   ;
+  height: 400px;
+}
+
+.ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* Header/Logo Title */
 .header {
   padding: 5px;
@@ -39,6 +87,7 @@ body {
   width:100%;
 
 }
+
 /*Image */
 .image {
     display: block;
@@ -248,35 +297,37 @@ x</button>
   </div>
 </div>
 
-
+<div class="scaleable-wrapper-main" id="scaleable-wrapper-main">
+  
+  <div class="main-design" id="main-design">
 <div class="follow">
-  <img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image" width="700px">
+  <img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image">
 </div><!-- This is main image-->
 
 
+
  <div class="image-link">
-  <a href="#"><img style="float:left;" src="../townchinesefood/image/menu_button.png" alt="menu_button" ></a>
+  <a href="#"><img style="float:left;" src="../townchinesefood/image/menu_button.png" alt="menu button" ></a>
   <a href="#"><img src="../townchinesefood/image/bar_button.png" alt="bar_button"></a>
   <a href="#"><img style="float:right;" src="../townchinesefood/image/order_button.png" alt="order button"></a>
 
-</div> <!-- This is link images-->
 
+</div><!-- This is link images-->
+</div> 
 
- <div class="follow">
-  <br> <h2> Follow Us </h2>
-   <img src="../townchinesefood/image/circle_facebook.png" alt="facebook">
-     <img src="../townchinesefood/image/circle_instagram.png" alt="instagram">
-     <img src="../townchinesefood/image/circle_tiktok.png" alt="tiktok"> </div>
- 
- 
-     <br>
-     <div class="gallery">
+<div class="gallery">
      <a href="#"><img src="image/noodles_fresh_chopsticks_instagram.jpg" alt="instagram chopsticks" ></a>
      <a href="#"><img src="image/beachinstagram.jpg" alt="instagram beach china"> </a>
      <a href="#"><img src="image/beef_large_kitchen.jpg" alt="instagram beef kitchen"> </a>
      <a href="#"><img src="image/interior_asian_instagram.jpg" alt="instagram interior resturant"> </a>
  </div><!--This is instagram posts-->
+
+     <br>
+     
  
+<div class="scaleable-wrapper" id="scaleable-wrapper">
+  
+  <div class="very-specific-design" id="very-specific-design">
  <div class="mission">
 
   <h2> Mission</h2><!-- This is title for mission statement-->
@@ -284,8 +335,8 @@ x</button>
   
       To bring quality, style and the wish for good fortune
       to all of our guests. <br>We provide a high-end experience
-      through Chinese cuisine.<br> </div> <!--This is the body of mission statement which describes Town's goals-->
-
+      through Chinese cuisine.<br> <!--This is the body of mission statement which describes Town's goals-->
+ </div>
 
 <div class="vision">
      <h2> Our Vision</h2><!-- This is title for Vision-->
@@ -304,8 +355,15 @@ x</button>
     Our audience is a high-end clientele who
     values a dining experience. The age range
     of our customers are from early 30s-60s.
-    We would like them to come back for both. </div><p></p> 
+    We would like them to come back for both. <p></p></div> 
     
-  
+    <div class="follow">
+  <br> <h2> Follow Us </h2>
+   <img src="../townchinesefood/image/circle_facebook.png" alt="facebook">
+     <img src="../townchinesefood/image/circle_instagram.png" alt="instagram">
+     <img src="../townchinesefood/image/circle_tiktok.png" alt="tiktok"> 
+ </div> <!--This follow links-->
+ 
+  </body>   
 
 </html>
