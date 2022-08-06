@@ -98,27 +98,9 @@ body {
   width: 50%;
   
 }
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 /* Drop down Box */
 
 .content {padding: 20px;}
@@ -269,10 +251,90 @@ h2{
 font-family: 'majesti_bannermedium';
 color: #d7e4c2;
 }
+
+/**Gallary**/
+body {
+  height: 100vh;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'majesti_bannermedium', monospace;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+
+.media {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
 </style>
 
  <img src="../townchinesefood/image/TOWN_logo.png" alt="town logo"> 
-<div class="header">
+
   
 
  
@@ -288,39 +350,49 @@ x</button>
 
   </div>
 </div>
-
+<div class="header"></div>
 <div class="scaleable-wrapper-main" id="scaleable-wrapper-main">
   
   <div class="very-specific-design" id="very-specific-design">
 <div class="follow">
-  <img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image" width=60%>
+  <img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image">
 </div><!-- This is main image-->
 
-
-
- <div class="image-link">
-  <a href="#"><img style="float:left;" src="../townchinesefood/image/menu_button.png" alt="menu button" ></a>
-  <a href="#"><img src="../townchinesefood/image/bar_button.png" alt="bar_button"></a>
-  <a href="#"><img style="float:right;" src="../townchinesefood/image/order_button.png" alt="order button"></a>
-
-
-</div><!-- This is link images-->
 </div> 
 </div>
 
-<div class="gallery">
+<div class="scaleable-wrapper" id="scaleable-wrapper">
+  <div class="very-specific-design" id="very-specific-design">
+
+<div class="wrapper">
+<div class="media">
+<div class="layer">
+    <p>Menu</p>
+  </div>
      <a href="#"><img src="image/noodles_fresh_chopsticks_instagram.jpg" alt="instagram chopsticks" ></a>
-     <a href="#"><img src="image/beachinstagram.jpg" alt="instagram beach china"> </a>
-     <a href="#"><img src="image/beef_large_kitchen.jpg" alt="instagram beef kitchen"> </a>
-     <a href="#"><img src="image/interior_asian_instagram.jpg" alt="instagram interior resturant"> </a>
- </div><!--This is instagram posts-->
+     </div>
+
+     <div class="media">
+      <div class="layer">
+          <p>Bar</p>
+        </div>
+
+     <a href="#"><img src="image/drinks_bar_header_2.jpg" alt="Bar Link"> </a>
+    </div>
+
+    <div class="media">
+      <div class="layer">
+          <p>Order</p>
+        </div>
+        
+        <a href="#"><img src="image/interior_asian_instagram.jpg" alt="instagram interior resturant"> </a>
+ </div>
+ </div><!--This is Option Links-->
 
      <br>
      
  
-<div class="scaleable-wrapper" id="scaleable-wrapper">
-  
-  <div class="very-specific-design" id="very-specific-design">
+
  <div class="mission">
 
   <h2> Mission</h2><!-- This is title for mission statement-->
