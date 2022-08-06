@@ -21,6 +21,8 @@
     font-style: normal;
 
 }
+
+
 body {
   font-family: majesti_bannermedium;
   margin: 0;
@@ -29,6 +31,44 @@ body {
   ;
 }
 
+
+.very-specific-design {
+  width: 600px;
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+
+.scaleable-wrapper {
+  padding: 10px;
+  resize: both;
+  position: relative;
+  background:   ;
+  height: 400px;
+}
+
+.scaleable-wrapper-main {
+  padding: 50px;
+  resize: both;
+  position: relative;
+  background:   ;
+  height: 400px;
+}
+.ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* Header/Logo Title */
 .header {
   padding: 5px;
@@ -39,6 +79,7 @@ body {
   width:100%;
 
 }
+
 /*Image */
 .image {
     display: block;
@@ -248,10 +289,13 @@ x</button>
   </div>
 </div>
 
-
+<div class="scaleable-wrapper-main" id="scaleable-wrapper-main">
+  
+  <div class="very-specific-design" id="very-specific-design">
 <div class="follow">
   <img src="image/Asian_chef_dark_header_3.jpg" alt="chef main image">
 </div><!-- This is main image-->
+
 
 
  <div class="image-link">
@@ -259,24 +303,24 @@ x</button>
   <a href="#"><img src="../townchinesefood/image/bar_button.png" alt="bar_button"></a>
   <a href="#"><img style="float:right;" src="../townchinesefood/image/order_button.png" alt="order button"></a>
 
-</div> <!-- This is link images-->
 
+</div><!-- This is link images-->
+</div> 
+</div>
 
- <div class="follow">
-  <br> <h2> Follow Us </h2>
-   <img src="../townchinesefood/image/circle_facebook.png" alt="facebook">
-     <img src="../townchinesefood/image/circle_instagram.png" alt="instagram">
-     <img src="../townchinesefood/image/circle_tiktok.png" alt="tiktok"> 
- </div>
- 
-     <br>
-     <div class="gallery">
+<div class="gallery">
      <a href="#"><img src="image/noodles_fresh_chopsticks_instagram.jpg" alt="instagram chopsticks" ></a>
      <a href="#"><img src="image/beachinstagram.jpg" alt="instagram beach china"> </a>
      <a href="#"><img src="image/beef_large_kitchen.jpg" alt="instagram beef kitchen"> </a>
      <a href="#"><img src="image/interior_asian_instagram.jpg" alt="instagram interior resturant"> </a>
  </div><!--This is instagram posts-->
+
+     <br>
+     
  
+<div class="scaleable-wrapper" id="scaleable-wrapper">
+  
+  <div class="very-specific-design" id="very-specific-design">
  <div class="mission">
 
   <h2> Mission</h2><!-- This is title for mission statement-->
@@ -305,7 +349,15 @@ x</button>
     values a dining experience. The age range
     of our customers are from early 30s-60s.
     We would like them to come back for both. <p></p></div> 
+ 
     
+    <div class="follow">
+  <br> <h2> Follow Us </h2>
+   <img src="../townchinesefood/image/circle_facebook.png" alt="facebook">
+     <img src="../townchinesefood/image/circle_instagram.png" alt="instagram">
+     <img src="../townchinesefood/image/circle_tiktok.png" alt="tiktok"> 
+ </div> <!--This follow links-->
+ 
   </body>   
 
 </html>
